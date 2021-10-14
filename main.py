@@ -53,7 +53,7 @@ class MyAnime(Resource):#This class is a resource that we can override methods f
             abort(404,message = "Series ID not found")
 
         return seriesFound
-
+    
     @marshal_with(resource_fields)
     def put(self,animeId):#create anime series
         
